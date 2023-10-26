@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+body {
+  font-family: "Indie Flower", cursive;
+  position: relative;
+}
+h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+p {
+  font-size: 2rem;
+  text-align: center;
+}
+#blackboard {
+  background-color: #606060;
+  width: 98%;
+  height: 800px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin-inline: auto;
+  align-items: center;
+}
+.posti-it {
+  width: 240px;
+  height: 235px;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  transform-origin: top left;
+  transition: transform 600ms;
+}
+.posti-it:nth-child(1) {
+  transform: rotate(-3deg);
+}
+.posti-it:nth-child(2) {
+  transform: rotate(4deg);
+}
+.posti-it:nth-child(3) {
+  transform: rotate(-4deg);
+}
+.posti-it:nth-child(4) {
+  transform: rotate(4.5deg);
+}
+.posti-it:nth-child(5) {
+  transform: rotate(-3.2deg);
+}
+.posti-it:nth-child(6) {
+  transform: rotate(-5deg);
+}
+.posti-it:nth-child(7) {
+  transform: rotate(-2.5deg);
+}
+.posti-it:nth-child(8) {
+  transform: rotate(3deg);
+}
+
+.posti-it:hover {
+  transform: rotate(0deg) scale(1.15);
+  z-index: 1;
+}
+.yellow {
+  background: linear-gradient(
+    360deg,
+    hsla(0, 0%, 55%, 1) 0%,
+    hsla(61, 83%, 88%, 1) 17%
+  );
+}
+.green {
+  background: hsla(0, 0%, 55%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 55%, 1) 0%,
+    hsla(123, 70%, 87%, 1) 17%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(0, 0%, 55%, 1) 0%,
+    hsla(123, 70%, 87%, 1) 17%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(0, 0%, 55%, 1) 0%,
+    hsla(123, 70%, 87%, 1) 17%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8C8C8C", endColorstr="#C6F5C8", GradientType=1 );
+}
+.purple {
+  background: hsla(0, 0%, 55%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 55%, 1) 0%,
+    hsla(240, 70%, 87%, 1) 17%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(0, 0%, 55%, 1) 0%,
+    hsla(240, 70%, 87%, 1) 17%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(0, 0%, 55%, 1) 0%,
+    hsla(240, 70%, 87%, 1) 17%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8C8C8C", endColorstr="#C7C7F5", GradientType=1 );
+}

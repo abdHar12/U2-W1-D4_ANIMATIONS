@@ -40,6 +40,15 @@ p {
   justify-content: space-around;
   transform-origin: top left;
   transition: transform 600ms;
+  animation: descale 1.5s backwards;
+}
+@keyframes descale {
+  from {
+    transform: scale(5) translateY(60px);
+  }
+  to {
+    transform: scale(1) translateX(0) translateY(0);
+  }
 }
 .posti-it:nth-child(1) {
   transform: rotate(-3deg);
